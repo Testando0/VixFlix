@@ -36,6 +36,3 @@ VixFlix è una piattaforma web che consente la **visione gratuita di film e seri
 
 ---
 
-## 📩 Contatti
-
-Hai suggerimenti, dubbi o vuoi collaborare? Scrivimi su [tuo-email@esempio.com](mailto:tuo-email@esempio.com)
