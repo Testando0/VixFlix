@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -733,7 +733,7 @@
 
       if (isMovie) {
         document.getElementById('episode-selector').style.display = 'none';
-        const url = `https://vixsrc.to/movie/${id}/?primaryColor=ff0000&lang=pt`;
+        const url = `https://vixsrc.to/movie/${id}/?primaryColor=ff0000&lang=pt-BR`;
         document.getElementById('player-iframe').src = url;
       } else {
         document.getElementById('episode-selector').style.display = 'block';
@@ -805,7 +805,7 @@
     }
 
     function playEpisode(tvId, seasonNumber, episodeNumber) {
-      const url = `https://vixsrc.to/tv/${tvId}/${seasonNumber}/${episodeNumber}/?primaryColor=ff0000&lang=pt`;
+      const url = `https://vixsrc.to/tv/${tvId}/${seasonNumber}/${episodeNumber}/?primaryColor=ff0000&lang=pt-BR`;
       document.getElementById('player-iframe').src = url;
     }
 
