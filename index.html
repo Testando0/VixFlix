@@ -733,7 +733,7 @@
 
       if (isMovie) {
         document.getElementById('episode-selector').style.display = 'none';
-        const url = `https://vixsrc.to/movie/${id}/?primaryColor=ff0000&lang=it`;
+        const url = `https://vixsrc.to/movie/${id}/?primaryColor=ff0000&lang=pt`;
         document.getElementById('player-iframe').src = url;
       } else {
         document.getElementById('episode-selector').style.display = 'block';
@@ -805,7 +805,7 @@
     }
 
     function playEpisode(tvId, seasonNumber, episodeNumber) {
-      const url = `https://vixsrc.to/tv/${tvId}/${seasonNumber}/${episodeNumber}/?primaryColor=ff0000&lang=it`;
+      const url = `https://vixsrc.to/tv/${tvId}/${seasonNumber}/${episodeNumber}/?primaryColor=ff0000&lang=pt`;
       document.getElementById('player-iframe').src = url;
     }
 
