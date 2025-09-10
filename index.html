@@ -575,19 +575,19 @@
     });
 
     async function fetchList(type) {
-      const res = await fetch(`https://api.themoviedb.org/3/${endpoints[type]}?api_key=${API_KEY}&language=it-IT`);
+      const res = await fetch(`https://api.themoviedb.org/3/${endpoints[type]}?api_key=${API_KEY}&language=pt-BR`);
       const j = await res.json();
       return j.results;
     }
 
     async function fetchTVSeasons(tvId) {
-      const res = await fetch(`https://api.themoviedb.org/3/tv/${tvId}?api_key=${API_KEY}&language=it-IT`);
+      const res = await fetch(`https://api.themoviedb.org/3/tv/${tvId}?api_key=${API_KEY}&language=pt-BR`);
       const data = await res.json();
       return data.seasons || [];
     }
 
     async function fetchSeasonEpisodes(tvId, seasonNumber) {
-      const res = await fetch(`https://api.themoviedb.org/3/tv/${tvId}/season/${seasonNumber}?api_key=${API_KEY}&language=it-IT`);
+      const res = await fetch(`https://api.themoviedb.org/3/tv/${tvId}/season/${seasonNumber}?api_key=${API_KEY}&language=pt-BR`);
       const data = await res.json();
       return data.episodes || [];
     }
@@ -682,7 +682,7 @@
     async function fetchItemDetails(item) {
       const isMovie = item.title !== undefined;
       const type = isMovie ? 'movie' : 'tv';
-      const res = await fetch(`https://api.themoviedb.org/3/${type}/${item.id}?api_key=${API_KEY}&language=it-IT`);
+      const res = await fetch(`https://api.themoviedb.org/3/${type}/${item.id}?api_key=${API_KEY}&language=pt-BR`);
       return await res.json();
     }
 
@@ -827,7 +827,7 @@
         resDiv.innerHTML = '<div class="loading"></div>';
         
         try {
-          const res = await fetch(`https://api.themoviedb.org/3/search/multi?api_key=${API_KEY}&query=${encodeURIComponent(q)}&language=it-IT`);
+          const res = await fetch(`https://api.themoviedb.org/3/search/multi?api_key=${API_KEY}&query=${encodeURIComponent(q)}&language=pt-BR`);
           const data = await res.json();
           resDiv.innerHTML = '';
           
